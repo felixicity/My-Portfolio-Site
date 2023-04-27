@@ -1,5 +1,6 @@
 'use client'
-import React, { EventHandler } from 'react'
+import React from 'react'
+import { ChangeEvent } from 'react';
 import {useState} from 'react'
 
 const Contact = () => {
@@ -10,16 +11,16 @@ const Contact = () => {
           message:""
          })
 
+  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const { name, value } = event.target;
 
-    const handleChange= (e:Event) => {
-        e.preventDefault()
-        const {name,value} = e.target
+  setData(prevData => ({
+    ...prevData,
+    [name]: value
+  }));
+};
 
-        setData(prevdata =>(
-             {...prevdata,
-              [name]: value
-            }))
-    }
+
     
   return (
     <form action="/" method='POST' className='flex flex-col justify-center items-center' >
@@ -45,8 +46,8 @@ const Contact = () => {
         </div>
         <div className="form-field">
             <label htmlFor="message">Message</label>
-            <textarea 
-            name="message" 
+            <textarea
+            name="message"
             id="message"  
             onChange={handleChange}
             value={data.message}
