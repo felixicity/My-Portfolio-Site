@@ -1,4 +1,6 @@
 import './globals.css'
+import head from '../app/head'
+
 
 export default function RootLayout({
   children,
