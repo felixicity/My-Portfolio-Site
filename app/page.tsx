@@ -1,6 +1,5 @@
 import React from 'react'
 import {FaLaptopCode ,FaMobileAlt,FaGithub,FaDiscord,FaWhatsapp,FaTwitter, FaLinkedin} from 'react-icons/fa'
-import {BiQuestionMark,BiArrowFromRight,BiArrowFromLeft} from 'react-icons/bi'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from './components/navigation'
@@ -23,18 +22,18 @@ const page = () => {
                             <p className='text-lg mb-1'>A Software Developer</p>
                             <p className='text-gray-400 mt-12 mb-1 w-4/5'> I help businesses , organisations and brands build goal driven digital products and interactive experiences to 
                               help brands meet their targets</p>
-                            <button className='mt-12 w-56 h-8 bg-purple-900 border-none rounded-lg text-md hover:bg-purple-800 md:w-72 md:h-12'>Contact Me</button>
+                            <Link href="#contact"><button className='mt-12 w-56 h-8 bg-purple-900 border-none rounded-lg text-md hover:bg-purple-800 md:w-72 md:h-12'>Contact Me</button></Link>
                       </div>
                       <div className="icons text-2xl cursor-pointer">
                             <Link href='/'> <FaWhatsapp className='mb-8'/></Link>
                             <Link href=' https://twitter.com/Felixchukwu2026'><FaTwitter className='mb-8'/></Link>
                             <Link href='https://github.com/felixicity'><FaGithub className='mb-8'/></Link>
-                            <Link href=" https://www.linkedin.com/in/felix-chukwu-9809b81a1/"><FaLinkedin/></Link>
+                            <Link href='https://www.linkedin.com/in/felix-chukwu-9809b81a1/'><FaLinkedin/></Link>
                       </div>
                  </div> 
              </main>
 
-            <section className='about-section my-16'>
+            <section className='about-section my-16' id='about'>
             <h2 className='text-center font-bold text-2xl border-b-2 border-purple-900 w-28 mx-auto'>About me</h2>
                  <p className='mt-4'> I am a self-taught developer who 
                  have been developing softwares and building projects 
@@ -43,7 +42,7 @@ const page = () => {
                  profile for more details.</p>
 
             </section>
-            <section className='skills-section my-16'>
+            <section className='skills-section my-16' id='skills'>
                 <h2 className='text-center font-bold text-2xl border-b-2 border-purple-900 w-20 mx-auto'>Skills</h2>
                 <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-16 my-12">
                     <div className='web mb-12 flex flex-col items-center '>
@@ -69,7 +68,7 @@ const page = () => {
                 </div>
             </section>
           
-            <section className='my-16 '>
+            <section className='my-16 ' id='project'>
               <h2 className='text-center font-bold text-2xl border-b-2 border-purple-900 w-28 mx-auto'>Projects</h2>
               <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-16">
                   <div className="project py-8">

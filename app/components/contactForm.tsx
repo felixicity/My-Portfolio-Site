@@ -23,7 +23,7 @@ const Contact = () => {
 
     
   return (
-    <form action="/" method='POST' className='flex flex-col justify-center items-center' >
+    <form action="/" method='POST' className='flex flex-col justify-center items-center' id='contact' >
         <div className="form-field">
             <label htmlFor="name">Name</label>
             <input 

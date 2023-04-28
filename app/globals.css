@@ -2,17 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer  base{
     * {
-        @apply box-border
+        box-sizing: border-box;
     }
     body,h1,h2{
-        @apply m-0
+        margin: 0;
     }
    
 }
-
-@layer utitlities{
 
     body {
         /* background:radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0)) ,  */
@@ -34,6 +32,7 @@
 
     section,main,header {
         width:100%;
+        margin: 0 auto;
         /* padding: 0 4vw; */
         max-width:60rem;
     }
@@ -51,7 +50,6 @@
     input{
         @apply block 
     }
-}
 
 label {
     @apply mx-12;
