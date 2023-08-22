@@ -2,71 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer  base{
-    * {
-        box-sizing: border-box;
-    }
-    body,h1,h2{
-        margin: 0;
-    }
-   
+@layer base {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  h1,
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    /* @apply bg-slate-900; */
+    /* color: white; */
+    /* font-size: 16px; */
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper {
+    max-width: min(100ch, 100% - 4rem);
+    margin-inline: auto;
+  }
 }
 
-    body {
-        /* background:radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0)) ,  */
-        @apply bg-slate-900;
-        min-height: 100vh;
-        color:white;
-        align-self:center;
-        font-size: 18px;
-        line-height: 1.7;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    }
+section,
+main,
+header {
+  width: 100%;
+  margin: 0 auto;
+}
 
-    .wrapper{
-        width:100%;
-        margin:auto;
-        padding: 0 5vw;
-        max-width:70rem;
-    }
+.mobile-nav {
+  @apply absolute w-2/3 top-0 right-0 bottom-0 bg-black justify-between lg:bg-opacity-0;
+}
 
-    section,main,header {
-        width:100%;
-        margin: 0 auto;
-        /* padding: 0 4vw; */
-        max-width:60rem;
-    }
+.menu-nav {
+  position: unset;
+  background-color: transparent;
+}
 
-    .mobile-nav {
-        @apply absolute w-2/3 top-0 right-0 bottom-0 bg-black justify-between lg:bg-opacity-0
-    }
-
-    .menu-nav {
-        position:unset;
-        background-color:transparent;
-    }
-
-
-    input{
-        @apply block 
-    }
+input {
+  @apply block;
+}
 
 label {
-    @apply mx-12;
+  @apply mx-12;
 }
 
-input[type='text'],
-input[type='email'] {
-    @apply text-black py-1 px-4 rounded-lg mx-12 my-4 border-2 border-solid border-purple-800 hover:ring-2;
-    width:20rem;
-    font-family: inherit;
+input[type="text"],
+input[type="email"] {
+  @apply text-black py-1 px-4 rounded-lg mx-12 my-4 border-2 border-solid border-purple-800 hover:ring-2;
+  width: 20rem;
+  font-family: inherit;
 }
 
 textarea {
-    width:20rem;
-    height:10rem;
-    font-family: inherit;
-    @apply text-black py-1 px-4 block rounded-lg mx-12 my-4 border-2 border-solid border-purple-800 hover:ring-2;
+  width: 20rem;
+  height: 10rem;
+  font-family: inherit;
+  @apply text-black py-1 px-4 block rounded-lg mx-12 my-4 border-2 border-solid border-purple-800 hover:ring-2;
 }
 
 /* input[type='checkbox'] {
