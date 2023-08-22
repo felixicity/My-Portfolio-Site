@@ -19,7 +19,7 @@ const Navigation = () => {
         setIsShown(true);
       }
     }
-  }, [window]);
+  }, []);
 
   return (
     <>
