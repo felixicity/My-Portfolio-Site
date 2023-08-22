@@ -21,7 +21,12 @@ const Contact = () => {
   };
 
   return (
-    <form action="/" method="POST" className="w-96 mx-auto mt-8" id="contact">
+    <form
+      action="/"
+      method="POST"
+      className="wrapper mx-auto mt-8 lg:w-96"
+      id="contact"
+    >
       <div className="form-field">
         <label htmlFor="name">Name</label>
         <input

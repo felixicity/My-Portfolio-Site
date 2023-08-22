@@ -21,9 +21,9 @@
   body {
     /* @apply bg-slate-900; */
     /* color: white; */
-    /* font-size: 16px; */
+    font-size: 18px;
     line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
   }
 
   .wrapper {
@@ -40,7 +40,7 @@ header {
 }
 
 .mobile-nav {
-  @apply absolute w-2/3 top-0 right-0 bottom-0 bg-black justify-between lg:bg-opacity-0;
+  @apply fixed w-2/3 top-0 right-0 bottom-0 bg-black justify-between lg:bg-opacity-0;
 }
 
 .menu-nav {
@@ -59,12 +59,12 @@ label {
 input[type="text"],
 input[type="email"] {
   @apply text-black py-1 px-4 rounded-lg mx-12 my-4 border-2 border-solid border-purple-800 hover:ring-2;
-  width: 20rem;
+  width: 80%;
   font-family: inherit;
 }
 
 textarea {
-  width: 20rem;
+  width: 80%;
   height: 10rem;
   font-family: inherit;
   @apply text-black py-1 px-4 block rounded-lg mx-12 my-4 border-2 border-solid border-purple-800 hover:ring-2;

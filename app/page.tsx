@@ -13,7 +13,7 @@ const page = () => {
         <Navigation />
         <Link
           href="https://www.linkedin.com/in/felix-chukwu-9809b81a1/"
-          className="absolute right-0 mr-5 px-4 py-2 bg-purple-950 text-white rounded-lg text-sm lg:mr-24 cursor-pointer"
+          className="absolute right-0 mr-5 px-4 py-2 bg-purple-900 text-white rounded-lg text-sm lg:mr-24 cursor-pointer"
         >
           Let's Chat
         </Link>
@@ -138,7 +138,7 @@ const page = () => {
           Projects
         </h2>
         <div className="wrapper py-12">
-          <div className="project py-24 flex  flex-col lg:flex-row gap-16 items-start">
+          <div className="project py-24 flex flex-col md:flex-row gap-16 items-start">
             <Image
               src="/project_images/tenzies_dice_game.png"
               height={400}
@@ -164,9 +164,9 @@ const page = () => {
               </Link>
             </div>
           </div>
-          <div className="project py-24 flex  flex-col lg:flex-row gap-16 items-start">
+          <div className="project py-24 flex flex-col md:flex-row gap-16 items-start">
             <Image
-              src="/Babreux ecommerce.png"
+              src="/project_images/Babreux_ecommerce.png"
               height={400}
               width={400}
               alt="ecommerce"
@@ -189,7 +189,7 @@ const page = () => {
               </Link>
             </div>
           </div>
-          <div className="project py-24 flex  flex-col lg:flex-row gap-16 items-start">
+          <div className="project py-24 flex  flex-col md:flex-row gap-16 items-start">
             <Image
               src="/project_images/atm_card.png"
               height={400}
