@@ -133,7 +133,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="bg-footer_900 text-white transition" id="project">
+      <section className="bg-slate-900 text-white transition" id="project">
         <h2 className="text-center font-bold text-2xl border-b-2 border-purple-900 w-28 mx-auto pt-12">
           Projects
         </h2>
@@ -158,7 +158,7 @@ const page = () => {
               </p>
               <Link
                 className=" bg-orange-600 rounded-lg py-1 px-2 w-20 hover:opacity-50 active:bg-red-600"
-                href="https://felixicity.github.io/interactive-card-details-form-main/"
+                href="https://tenzies-game-blush.vercel.app/"
               >
                 View Live
               </Link>
@@ -183,7 +183,7 @@ const page = () => {
               </p>
               <Link
                 className=" bg-orange-600 rounded-lg py-1 px-2 w-20 hover:opacity-50 active:bg-red-600"
-                href="https://felixicity.github.io/results-summary-component-main/"
+                href="https://ecommerce-frontend-three-xi.vercel.app/"
               >
                 View Live
               </Link>
@@ -208,7 +208,7 @@ const page = () => {
               </p>
               <Link
                 className=" bg-orange-600 rounded-lg py-1 px-2 w-20 hover:opacity-50 active:bg-red-600"
-                href="https://felixicity.github.io/results-summary-component-main/"
+                href="https://felixicity.github.io/interactive-card-details-form-main/"
               >
                 View Live
               </Link>
@@ -225,7 +225,7 @@ const page = () => {
         </div>
       </div>
 
-      <footer className="bg-footer_900 text-white">
+      <footer className="bg-slate-900 text-white">
         <div className="icons py-12 flex text-2xl cursor-pointer justify-between w-56 mx-auto">
           <Link href="/">
             {" "}
